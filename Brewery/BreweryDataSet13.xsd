@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BreweryDataSet13" targetNamespace="http://tempuri.org/BreweryDataSet13.xsd" xmlns:mstns="http://tempuri.org/BreweryDataSet13.xsd" xmlns="http://tempuri.org/BreweryDataSet13.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BreweryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BreweryConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Brewery.Properties.Settings.GlobalReference.Default.BreweryConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SortsTableAdapter" GeneratorDataComponentClassName="SortsTableAdapter" Name="Sorts" UserDataComponentName="SortsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BreweryConnectionString (Settings)" DbObjectName="dbo.Sorts" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [sort-name] FROM dbo.Sorts</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sort-name" DataSetColumn="sort-name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BreweryDataSet13" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BreweryDataSet13" msprop:Generator_UserDSName="BreweryDataSet13">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Sorts" msprop:Generator_TableClassName="SortsDataTable" msprop:Generator_TableVarName="tableSorts" msprop:Generator_TablePropName="Sorts" msprop:Generator_RowDeletingName="SortsRowDeleting" msprop:Generator_RowChangingName="SortsRowChanging" msprop:Generator_RowEvHandlerName="SortsRowChangeEventHandler" msprop:Generator_RowDeletedName="SortsRowDeleted" msprop:Generator_UserTableName="Sorts" msprop:Generator_RowChangedName="SortsRowChanged" msprop:Generator_RowEvArgName="SortsRowChangeEvent" msprop:Generator_RowClassName="SortsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sort-name" msprop:Generator_ColumnVarNameInTable="_columnsort_name" msprop:Generator_ColumnPropNameInRow="_sort_name" msprop:Generator_ColumnPropNameInTable="_sort_nameColumn" msprop:Generator_UserColumnName="sort-name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
